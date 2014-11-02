@@ -1,0 +1,74 @@
+
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+     <script type="text/javascript">
+
+        $(document).ready(function(){
+        $(".social-login-box").height( $(".login-box").height() - 160 );
+        });
+
+    </script>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        LOGIN
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6 separator social-login-box"> <br />
+                            <a href="http://www.jquery2dotnet.com" class="btn facebook btn-block" role="button">Login Facebook</a>
+                            <br />
+                            <a href="http://www.jquery2dotnet.com" class="btn twitter btn-block" role="button">Login Twitter</a>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 login-box">
+                            <form role="form">
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                <input type="text" class="form-control" placeholder="Nombre" required autofocus />
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                <input type="password" class="form-control" placeholder="Password" required />
+                            </div>
+                            <p>
+                                <a href="http://www.jquery2dotnet.com">Se olvido la contraseña?</a></p>
+                            No tienes una cuenta? <a href="http://www.jquery2dotnet.com">Inscríbete aquí</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="Remember">
+                                    Recordar
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            
+                            <button type="button" class="btn btn-labeled btn-success">
+                                <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Entrar</button>
+
+                            <button type="button" class="btn btn-labeled btn-danger">
+                                <span class="btn-label"><i class="glyphicon glyphicon-remove"></i></span>Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   

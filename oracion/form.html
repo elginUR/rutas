@@ -1,0 +1,34 @@
+<fieldset>
+
+	<legend>Formulario</legend>
+
+
+	<form class="form-inline" role="form" name="formulario">
+
+  
+
+  	<div class="form-group">
+    	<label class="sr-only" for="2">Nombre</label>
+    	<input type="text" class="form-control" id="2"  name="nombre" placeholder="Nombre" ng-model="usuario.nom" required>
+  	</div>
+
+
+  	<div class="form-group">
+    	<label class="sr-only" for="3">Apellido</label>
+    	<input type="text" class="form-control" id="3"   name="apellido" placeholder="Apellido" ng-model="usuario.ape" required>
+  	</div>
+
+
+
+     <!--  <div ng-show="formulario.nombre.$dirty && formulario.apellido.$invalid">
+        <p class="help-block text-danger" ng-show="formulario.nombre.$error.required">Nombre obligatorio</p>
+        <p class="help-block text-danger" ng-show="formulario.apellido.$error.required">Nombre obligatorio</p>
+      </div> -->
+  		
+   		<button  class="btn btn-success" ng-disabled="formulario.$invalid">Agregar</button>
+	</form>
+
+
+
+
+</fieldset>

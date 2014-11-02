@@ -1,0 +1,29 @@
+
+<div  ng-include="'form.html'">
+
+
+</div>
+
+
+
+
+<legend>Listado</legend>
+
+<input type="text" placeholder="buscar" ng-model="buscar.nom"> 
+
+<a href="" ng-click="ordenarPor('nom')">
+                Nombre/s
+              </a>
+              <span class="caret" style="cursor: pointer" ng-click="ordenarPor('-nom')"></span>
+
+
+<ul>
+  <li ng-repeat="usu in usuarios | orderBy:ordenSeleccionado | filter:buscar "> 
+
+    {{usu.nom | uppercase}}- {{usu.ape}}</li>
+
+
+</ul>
+
+
+
